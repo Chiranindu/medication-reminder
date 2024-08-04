@@ -22,12 +22,13 @@ function MedicationForm({ addReminder }) {
   return (
     <div className="form-section">
     <p>Keep track of your medications easily and never miss a dose!</p>
-      <h2>Add Medication</h2>
+      
       <form onSubmit={handleSubmit}>
         <label>
           Medication Name:
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
         </label>
+        <h2>Add Medication</h2>
         <label>
           Dosage:
           <input type="text" value={dosage} onChange={(e) => setDosage(e.target.value)} required />
